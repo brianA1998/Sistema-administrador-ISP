@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientes.MenuClientes">
+   <children>
+      <AnchorPane fx:id="menuCliente" prefHeight="71.0" prefWidth="715.0" style="-fx-background-color: #7A8182;">
+         <children>
+            <Button fx:id="btnMostrar" layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onAction="#cambiarPantalla" prefHeight="55.0" prefWidth="136.0" styleClass="btnMenuBar" text="CLIENTES" />
+            <Button fx:id="btnAlta" layoutX="144.0" layoutY="5.0" mnemonicParsing="false" onAction="#cambiarPantalla" prefHeight="55.0" prefWidth="199.0" styleClass="btnMenuBar" text="ALTA CLIENTE" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="contenedor" layoutY="71.0" prefHeight="381.0" prefWidth="715.0" />
+   </children>
+</Pane>

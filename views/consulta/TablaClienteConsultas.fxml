@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="tablaRegistroConsulta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consulta.TablaConsulta">
+   <children>
+      <TableView fx:id="tablaConsultas" layoutX="-2.0" layoutY="49.0" prefHeight="400.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="colIdConsulta" prefWidth="109.0" text="NUMERO" />
+          <TableColumn fx:id="colNombreConsulta" prefWidth="252.0" text="NOMBRE" />
+            <TableColumn fx:id="colFechaConsulta" prefWidth="133.0" text="FECHA" />
+        </columns>
+      </TableView>
+      <Label layoutX="134.0" layoutY="11.0" style="-fx-font-size: 20;" text="REGISTRO DE CONSULTAS" />
+   </children>
+</Pane>

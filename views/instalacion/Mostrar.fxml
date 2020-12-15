@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1479.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="instalaciones.Mostrar">
+   <children>
+      <TableView fx:id="tablaInstalacion" layoutY="62.0" prefHeight="557.0" prefWidth="1477.0">
+         <columns>
+            <TableColumn fx:id="colNroAbonado" editable="false" minWidth="3.0" prefWidth="120.0" text="N° ABONADO" />
+            <TableColumn fx:id="colDni" editable="false" prefWidth="121.0" text="D.N.I" />
+            <TableColumn fx:id="colNombre" editable="false" prefWidth="172.0" text="NOMBRE" />
+            <TableColumn fx:id="colApellido" editable="false" prefWidth="179.0" text="APELLIDO" />
+            <TableColumn fx:id="colDomicilio" editable="false" minWidth="0.0" prefWidth="275.0" sortable="false" text="DOMICILIO" />
+            <TableColumn fx:id="colCelular" editable="false" minWidth="3.0" prefWidth="141.0" sortable="false" text="CELULAR" />
+            <TableColumn fx:id="colTelefono" editable="false" minWidth="3.0" prefWidth="153.0" sortable="false" text="TELEFONO" />
+            <TableColumn fx:id="colCorreo" editable="false" minWidth="3.0" prefWidth="184.0" sortable="false" text="CORREO" />
+            <TableColumn fx:id="colFechaAlta" editable="false" minWidth="3.0" prefWidth="120.0" sortable="false" text="FECHA ALTA" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnCancelar" disable="true" layoutX="7.0" mnemonicParsing="false" onAction="#cancelarInstalacion" prefHeight="46.0" prefWidth="65.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnFinalizacion" disable="true" layoutX="96.0" layoutY="3.0" mnemonicParsing="false" onAction="#finalizarInstalacion" prefHeight="46.0" prefWidth="65.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ComboBox fx:id="comboEstado" layoutX="330.0" layoutY="14.0" prefHeight="38.0" prefWidth="150.0" promptText="      ESTADO" />
+      <ComboBox fx:id="comboCiudad" layoutX="491.0" layoutY="14.0" prefHeight="38.0" prefWidth="150.0" promptText="     CIUDAD" />
+      <DatePicker fx:id="fechaDesde" layoutX="728.0" layoutY="14.0" prefHeight="38.0" prefWidth="174.0" />
+      <DatePicker fx:id="fechaHasta" layoutX="1011.0" layoutY="14.0" prefHeight="38.0" prefWidth="174.0" />
+      <Label layoutX="661.0" layoutY="20.0" prefHeight="26.0" prefWidth="65.0" text="DESDE" />
+      <Label layoutX="935.0" layoutY="20.0" prefHeight="26.0" prefWidth="65.0" text="HASTA" />
+      <Button fx:id="btnFiltrar" layoutX="1259.0" layoutY="8.0" mnemonicParsing="false" onAction="#filtrarCampos" prefHeight="46.0" prefWidth="122.0" text="FILTRAR">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnGenerarContrato" layoutX="188.0" layoutY="14.0" mnemonicParsing="false" onAction="#generarContrato" prefHeight="38.0" prefWidth="128.0" text="Generar Contrato" />
+   </children>
+</Pane>

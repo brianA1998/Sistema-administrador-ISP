@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientes.InformacionRapida">
+   <children>
+      <TabPane prefHeight="726.0" prefWidth="853.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Datos Administrativos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="853.0">
+                     <children>
+                        <Text layoutX="-12.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="NOMBRE" wrappingWidth="113.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="APELLIDO" wrappingWidth="97.13671875" x="30.0" />
+                        <Text layoutX="372.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="CELULAR" wrappingWidth="84.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="TELEFONO" wrappingWidth="117.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="CORREO" wrappingWidth="147.4609375" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="CIUDAD" wrappingWidth="131.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="BARRIO" wrappingWidth="131.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="DOMICILIO" wrappingWidth="137.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="MANZANA" wrappingWidth="97.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="DEPARTAMENTO" wrappingWidth="131.13671875" x="45.0" />
+                        <Text layoutX="-12.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="MONOBLOCK" wrappingWidth="99.0546875" x="45.0" />
+                        <Text layoutX="-12.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="DOCUMENTO / C.U.I.T" x="45.0" />
+                        <Text layoutX="372.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="FECHA NACIMIENTO" wrappingWidth="167.13671875" x="30.0" />
+                        <Text layoutX="372.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="N° ABONADO" wrappingWidth="117.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="LUGAR TRABAJO" wrappingWidth="131.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="TIPO TRABAJO" wrappingWidth="131.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="PUESTO TRABAJO" wrappingWidth="131.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="IVA" wrappingWidth="131.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="SITIO WEB" wrappingWidth="131.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="TWITTER" wrappingWidth="131.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="INSTAGRAM" wrappingWidth="131.13671875" x="45.0" />
+                        <Text layoutX="372.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="FACEBOOK" wrappingWidth="131.13671875" x="30.0" />
+                        <Text layoutX="-12.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="LINKEDIN" wrappingWidth="131.13671875" x="45.0" />
+                        <TextField fx:id="txtApellido" editable="false" layoutX="545.0" layoutY="64.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtNombre" editable="false" layoutX="180.0" layoutY="64.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtFechaNacimiento" editable="false" layoutX="545.0" layoutY="136.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDocumento" editable="false" layoutX="180.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtNumeroAbonado" editable="false" layoutX="545.0" layoutY="99.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCelular" editable="false" layoutX="545.0" layoutY="173.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTelefono" editable="false" layoutX="180.0" layoutY="171.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCorreo" editable="false" layoutX="545.0" layoutY="210.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtCiudad" editable="false" layoutX="180.0" layoutY="208.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtBarrio" editable="false" layoutX="545.0" layoutY="246.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDomicilio" editable="false" layoutX="180.0" layoutY="245.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtManzana" editable="false" layoutX="545.0" layoutY="284.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtDepartamento" editable="false" layoutX="180.0" layoutY="281.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtMonoblock" editable="false" layoutX="180.0" layoutY="319.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtLugarTrabajo" editable="false" layoutX="180.0" layoutY="586.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTipoTrabajo" editable="false" layoutX="545.0" layoutY="586.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtPuestoTrabajo" editable="false" layoutX="180.0" layoutY="620.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtIva" editable="false" layoutX="545.0" layoutY="620.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtSitioWeb" editable="false" layoutX="180.0" layoutY="416.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtTwitter" editable="false" layoutX="545.0" layoutY="416.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtInstagram" editable="false" layoutX="180.0" layoutY="452.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtFacebook" editable="false" layoutX="545.0" layoutY="452.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtLinkedin" editable="false" layoutX="180.0" layoutY="489.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="29.0" layoutY="14.0" prefHeight="27.0" prefWidth="181.0" style="-fx-font-size: 18;" text="DATOS PERSONALES">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="25.0" layoutY="41.0" prefHeight="3.0" prefWidth="428.0" style="-fx-background-color: black;" />
+                        <Label layoutX="29.0" layoutY="370.0" prefHeight="27.0" prefWidth="181.0" style="-fx-font-size: 18;" text="REDES SOCIALES">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="25.0" layoutY="397.0" prefHeight="3.0" prefWidth="428.0" style="-fx-background-color: black;" />
+                        <Label layoutX="29.0" layoutY="537.0" prefHeight="27.0" prefWidth="181.0" style="-fx-font-size: 18;" text="DATOS LABORALES">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="25.0" layoutY="564.0" prefHeight="3.0" prefWidth="428.0" style="-fx-background-color: black;" />
+                        <Text layoutX="-12.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="labelAltaUsuario" text="FECHA ALTA" wrappingWidth="167.13671875" x="45.0" />
+                        <TextField fx:id="txtFechaAlta" editable="false" layoutX="180.0" layoutY="136.0" prefHeight="25.0" prefWidth="200.0" styleClass="text-field-general">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Abono Cliente">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="generarAbono" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Generar abono" />
+                        <Button fx:id="exportarPdf" layoutX="606.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Exportar PDF" />
+                        <Button fx:id="exportarExcel" layoutX="726.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Exportar EXCEL" />
+                        <TableView layoutX="10.0" layoutY="92.0" prefHeight="539.0" prefWidth="833.0">
+                          <columns>
+                            <TableColumn prefWidth="102.0" text="ABONADO" />
+                            <TableColumn prefWidth="105.0" text="CUENTA" />
+                              <TableColumn prefWidth="328.0" text="NOMBRE / RAZÓN SOCIAL" />
+                              <TableColumn prefWidth="123.0" text="TOTAL" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab disable="true" text="Untitled Tab 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab disable="true" text="Untitled Tab 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TabPane>
+   </children>
+</Pane>

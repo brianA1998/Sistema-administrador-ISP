@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usuarios.TablaUsuario">
+   <children>
+      <TableView fx:id="tablaUser" layoutY="73.0" prefHeight="583.0" prefWidth="1160.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="colNombre" editable="false" prefWidth="138.0" text="NOMBRE" />
+          <TableColumn fx:id="colApellido" editable="false" prefWidth="138.0" text="APELLIDO" />
+            <TableColumn fx:id="colDni" editable="false" prefWidth="117.0" text="D.N.I" />
+            <TableColumn fx:id="colCorreo" editable="false" prefWidth="159.0" text="CORREO" />
+            <TableColumn fx:id="colTelefono" editable="false" prefWidth="120.0" text="TELEFONO" />
+            <TableColumn fx:id="colDomicilio" editable="false" prefWidth="156.0" text="DOMICILIO" />
+            <TableColumn fx:id="colNacimiento" editable="false" prefWidth="168.0" text="FECHA NACIMIENTO" />
+            <TableColumn fx:id="colIngreso" editable="false" minWidth="3.0" prefWidth="163.0" text="FECHA INGRESO" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEditar" disable="true" layoutX="108.0" mnemonicParsing="false" onAction="#editarUsuario" prefHeight="62.0" prefWidth="79.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnEliminar" disable="true" layoutX="7.0" mnemonicParsing="false" onAction="#eliminarUsuario" prefHeight="62.0" prefWidth="79.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</Pane>

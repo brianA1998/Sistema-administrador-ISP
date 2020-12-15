@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_pane_fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Sidecom">
+	<children>
+      <Pane fx:id="contenidoBusqueda" layoutX="213.0" layoutY="-2.0" prefHeight="823.0" prefWidth="715.0" />
+      <Pane fx:id="contenedor" layoutX="214.0" prefHeight="823.0" prefWidth="715.0" />
+      <Pane fx:id="menu" layoutX="-1.0" prefHeight="823.0" prefWidth="215.0" style="-fx-background-color: #7A8182;">
+         <children>
+					<TextField fx:id="txtBuscar" alignment="CENTER" layoutX="11.0" layoutY="113.0" onAction="#buscarCliente" prefHeight="38.0" prefWidth="194.0" style="-fx-border-width: 1px 1px 1px 1px; -fx-border-color: #000000;">
+						<font>
+							<Font name="Calibri" size="20.0" />
+						</font>
+					</TextField>
+							<ImageView fitHeight="34.0" fitWidth="33.0" layoutX="14.0" layoutY="115.0">
+								<image>
+									<Image url="@../../imagenes/lupa.png" />
+								</image>
+							</ImageView>
+
+   					<Button fx:id="btnBuscar" layoutX="11.0" layoutY="164.0" mnemonicParsing="false" onAction="#buscarCliente" prefHeight="34.0" prefWidth="194.0" text="BUSCAR" textFill="#111110" />
+
+   					<Button fx:id="btnFacturacion" alignment="CENTER" layoutY="276.0" mnemonicParsing="false" onAction="#cambiarContenido" prefHeight="34.0" prefWidth="215.0" styleClass="buttons-sidebar" text="FACTURACIÓN" textFill="#fffffa" />
+
+   					<Button fx:id="btnInstalacion" alignment="CENTER" layoutY="327.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="INSTALACIONES" textFill="#fffffa">></Button>
+
+   					<Button fx:id="btnCobranzas" alignment="CENTER" layoutY="383.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="COBRANZAS" textFill="#fffffa">></Button>
+
+   					<Button fx:id="btnComunicacion" alignment="CENTER" layoutY="440.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="COMUNICACIÓN" textFill="#fffffa" />
+
+   					<Button fx:id="btnClientes" alignment="CENTER" layoutY="226.0" mnemonicParsing="false" onAction="#cambiarContenido" prefHeight="34.0" prefWidth="215.0" styleClass="buttons-sidebar" text="CLIENTES" textFill="WHITE" />
+            <Button fx:id="btnUsuario" alignment="CENTER" layoutX="1.0" layoutY="499.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="USUARIOS" textFill="#fffffa" />
+            <Button fx:id="btnServicio" alignment="CENTER" layoutY="557.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="SERVICIOS" textFill="#fffffa" />
+            <Button fx:id="btnConsulta" alignment="CENTER" layoutY="613.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="CONSULTA" textFill="#fffffa" />
+            <ImageView fx:id="imgSidecom" fitHeight="54.0" fitWidth="200.0" layoutX="7.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnAjustes" alignment="CENTER" layoutY="668.0" mnemonicParsing="false" onAction="#cambiarContenido" prefWidth="215.0" styleClass="buttons-sidebar" text="AJUSTES" textFill="#fffffa" />
+         </children>
+      </Pane>
+	</children>
+</AnchorPane>

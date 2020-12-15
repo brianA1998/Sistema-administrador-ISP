@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comunicacion.MostrarCorreosEnviados">
+   <children>
+      <TableView fx:id="tablaCorreoEnviado" prefHeight="314.0" prefWidth="776.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="183.0" resizable="false" sortable="false" text="NOMBRE " />
+          <TableColumn fx:id="colDocumento" prefWidth="157.0" resizable="false" sortable="false" text="DOCUMENTO" />
+            <TableColumn fx:id="colTitulo" prefWidth="282.0" resizable="false" sortable="false" text="TITULO" />
+            <TableColumn fx:id="colFechaEnvio" prefWidth="146.0" sortable="false" text="FECHA ENVIO" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

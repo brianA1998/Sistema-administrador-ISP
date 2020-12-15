@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comunicacion.MenuComunicacion">
+   <children>
+      <AnchorPane fx:id="barraMenu" layoutY="-1.0" prefHeight="71.0" prefWidth="715.0" style="-fx-background-color: #7A8182;">
+         <children>
+            <Button fx:id="btnCargarPlantilla" layoutX="5.0" layoutY="6.0" mnemonicParsing="false" onAction="#cambiarPantalla" prefHeight="55.0" prefWidth="164.0" styleClass="btnMenuBar" text="CARGAR PLANTILLA" />
+            <Button fx:id="btnEnviarCorreos" layoutX="394.0" layoutY="5.0" mnemonicParsing="false" onAction="#cambiarPantalla" prefHeight="55.0" prefWidth="124.0" styleClass="btnMenuBar" text="ENVIAR" />
+            <Button fx:id="btnCorreosEnviados" layoutX="537.0" layoutY="8.0" mnemonicParsing="false" onAction="#cambiarPantalla" prefHeight="55.0" prefWidth="164.0" styleClass="btnMenuBar" text="ENVIADOS" />
+            <Button fx:id="btnMostrarPlantilla" layoutX="179.0" layoutY="5.0" mnemonicParsing="false" onAction="#cambiarPantalla" prefHeight="55.0" prefWidth="199.0" styleClass="btnMenuBar" text="MOSTRAR PLANTILLAS" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="contenedorCorreo" layoutY="70.0" prefHeight="382.0" prefWidth="715.0" />
+   </children>
+</Pane>

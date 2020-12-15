@@ -1,0 +1,238 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+* {
+	-fx-font-size: 14.0px;
+	-fx-font-family: System;
+}
+
+
+.text-field-general{
+	-fx-pref-height : 25.0px;
+	-fx-pref-width: 200.0px;
+	-fx-text-inner-color:  black;
+	-fx-prompt-text-fill: #CAC6C5;
+}
+
+.text-field-consulta-venta{
+	-fx-pref-height : 38.0px;
+	-fx-pref-width: 360.0px;
+	-fx-text-inner-color:  black;
+}
+
+.combo-consulta-venta{
+	-fx-pref-height : 38.0px;
+	-fx-pref-width: 360.0px;
+}
+
+.combo-general{
+	-fx-pref-height : 25.0px;
+	-fx-pref-width: 200.0px;
+}
+
+.sidebar{
+	-fx-background-color:  #26C6DA;
+}
+
+
+.btnLogin{
+	-fx-background-color: #7B0F0F;
+	-fx-border-width:  4.0px;
+	-fx-background-radius:  90.0;	
+	
+}
+
+
+
+.btnLogin:hover{
+	-fx-background-color: #E47B7B;
+	-fx-font-weight: bold;
+    -fx-font-size: 23.0;
+}
+
+
+.text-field-login{
+	-fx-prompt-text-fill: white;
+	-fx-background-color: transparent;
+	-fx-border-color:  #17202A;
+	-fx-border-width:  0.0px 0.0px 2.0px 0.0px;
+	-fx-text-inner-color:  white;
+	
+	
+}
+
+#btnGuardar{
+	-fx-background-color: #869E78;
+	-fx-border-width:  4.0px;
+	-fx-background-radius:  90.0;
+}
+
+#btnGuardar:hover{
+	-fx-background-color: #59AA2A;
+	-fx-font-weight: bold;
+}
+
+#btnCargar{
+	-fx-background-color: #869E78;
+	-fx-border-width:  2.0px;
+	-fx-background-radius:  70.0;
+	
+}
+
+#btnCargar:hover{
+	-fx-background-color: #59AA2A;
+	-fx-font-weight: bold;
+}
+
+
+#btnEnviar{
+	-fx-background-color: #869E78;
+	-fx-border-width:  4.0px;
+	-fx-background-radius:  90.0;
+}
+#btnEnviar:hover{
+	-fx-background-color: #59AA2A;
+	-fx-font-weight: bold;
+    
+}
+
+#btnFiltrar{
+	-fx-background-color: #869E78;
+	-fx-border-width:  4.0px;
+	-fx-background-radius:  90.0;
+}
+
+#btnFiltrar:hover{
+	-fx-background-color: #59AA2A;
+	-fx-font-weight: bold;
+    
+}
+
+#txtTitulo .scrollPane{
+	 -fx-hbar-policy: never;
+    -fx-vbar-policy: never;
+}
+
+
+
+
+
+.date-picker{
+	-fx-background-color: transparent;
+}
+
+#btnRestContrasena:hover{
+	-fx-text-fill: #D3CDCD;
+}
+
+#titulo_login{
+	-fx-font-family: sans serif;
+}
+
+
+
+
+	
+
+
+
+
+
+
+
+.btnMenuBar:hover{
+	-fx-background-color : #A12633;
+	-fx-text-fill: white;
+	
+}
+
+#btnBuscar{
+	-fx-background-color: #C8D1D1;
+	-fx-border-width:  4.0px;
+	-fx-background-radius:  90.0;	
+}
+#btnBuscar:hover{
+	-fx-background-color: #A12633;
+	-fx-font-size: 19.0;
+	-fx-font-weight: bold;
+	
+}
+
+#contenedor{
+	-fx-border-width:  1.0px 1.0px 1.0px 1.0px;
+}
+
+.btnMenuBar{
+	-fx-padding: 8.0 15.0 15.0 15.0;
+    -fx-background-insets: 0.0,0.0 0.0 5.0 0.0, 0.0 0.0 6.0 0.0, 0.0 0.0 7.0 0.0;
+    -fx-background-radius: 8.0;
+    
+    -fx-effect: dropshadow( gaussian , rgba(0.0,0.0,0.0,0.75) , 4.0,0.0,0.0,1.0 );
+    -fx-font-weight: bold;
+    -fx-font-size: 18.0;
+    -fx-text-fill: white;
+    -fx-background-color : transparent ;
+}
+
+.btnMenuBar:hover{
+	 -fx-text-fill: black;
+}
+
+.buttons-sidebar{
+	
+	-fx-padding: 8.0 15.0 15.0 15.0;
+    -fx-background-insets: 0.0,0.0 0.0 5.0 0.0, 0.0 0.0 6.0 0.0, 0.0 0.0 7.0 0.0;
+    -fx-background-radius: 8.0;
+    -fx-background-color: 
+        linear-gradient(from 0.0% 93.0% to 0.0% 100.0%, #a34313 0.0%, #903b12 100.0%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50.0% 50.0%, radius 100.0%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0.0,0.0,0.0,0.75) , 4.0,0.0,0.0,1.0 );
+    -fx-font-weight: bold;
+    -fx-font-size: 20.0;
+    
+    -fx-background-color : transparent;
+
+}
+.buttons-sidebar:hover {
+    -fx-background-color: #B52020;
+    
+        -fx-pref-width: 210.0px;
+        -fx-font-size: 22.0;
+        -fx-text-fill: black;
+}
+
+.buttons-sidebar:pressed {
+    -fx-padding: 10.0 15.0 13.0 15.0;
+    -fx-background-insets: 2.0 0.0 0.0 0.0,2.0 0.0 3.0 0.0, 2.0 0.0 4.0 0.0, 2.0 0.0 5.0 0.0;
+}
+
+.buttons-sidebar Text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0.0,0.0,0.0,2.0 );
+}
+
+
+/*ESTILOS PARA TABLA DE CLIENTES Y USUARIOS */
+
+ /*centrar y cambiar color de los titulos de columnas*/
+
+ 
+.table-view .column-header .label{
+    -fx-text-fill: #321B1B;
+    -fx-alignment: CENTER;
+}
+
+/*color de fondo del titulo de columna cuando en roton esta sobre ella*/
+
+.table-view .column-header:hover {
+    -fx-background-color: #9B9898;
+}
+
+
+
+
+
+
+
+
